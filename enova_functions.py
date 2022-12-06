@@ -42,15 +42,15 @@ def shapes_exploration(df_train, df_test):
     # Training datset shape
     print('Training dataset')
     print('- Observations:', str(df_train.shape[0]))
-    print('- Attributes:', str(df_train.shape[1] - 5))                # Price logprice and retail and logretail are not explicative variables
-    print('- Target:', str(1))
+    print('- Attributes:', str(df_train.shape[1] - 4))                # Price logprice and retail and logretail are not explicative variables
+    print('- Target:', str(2))
     # Testing dataset
     print('Offers dataset')
     print('- Observations:', str(df_test.shape[0]))
     print('- Attributes:', str(df_test.shape[1] - 1))                  # Offer column is not an explicative variable                         
     # Verifying variables
     if list(df_train.columns[0:-1]) == list(df_test.columns): 
-        print('Same columns: No issues')
+        print('Same columns: No issues.')
     return None
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
